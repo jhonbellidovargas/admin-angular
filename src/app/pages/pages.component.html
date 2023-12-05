@@ -1,0 +1,27 @@
+<div id="main-wrapper">
+  <app-header></app-header>
+  <app-sidebar></app-sidebar>
+  <div class="page-wrapper">
+    <!-- ============================================================== -->
+    <!-- Container fluid -->
+    <!-- ============================================================== -->
+    <div class="container-fluid">
+      <!-- Bread crumbs-->
+      <app-breadcrumbs></app-breadcrumbs>
+
+      <!-- Routes system -->
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">
+              <router-outlet></router-outlet>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer">© 20123 Admin Pro by wrappixel.com</footer>
+    </div>
+  </div>
+</div>
