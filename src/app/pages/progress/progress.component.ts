@@ -3,9 +3,20 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-progress',
   templateUrl: './progress.component.html',
-  styles: [
+  styleUrls: [
+    './progress.component.css'
   ]
 })
 export class ProgressComponent {
+  progreso1: number = 20;
+  progreso2: number = 75;
+
+  get getPorcentaje1() {
+    return `${this.progreso1}%`;
+  }
+
+  get getPorcentaje2() {
+    return `${this.progreso2}%`;
+  }
 
 }
